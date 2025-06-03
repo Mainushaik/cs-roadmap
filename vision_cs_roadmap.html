@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vision-Aligned CS Roadmap</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 40px;
+      background: linear-gradient(to right, #f9f9f9, #e0f7fa);
+      color: #333;
+    }
+    h1, p {
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.5em;
+      color: #006064;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .phase {
+      background-color: #ffffff;
+      border-left: 10px solid #00838f;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px 25px;
+      position: relative;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+    }
+    .phase:hover {
+      background-color: #e0f7fa;
+      transform: scale(1.01);
+    }
+    .phase h2 {
+      margin: 0;
+      font-size: 1.5em;
+      color: #004d40;
+    }
+    .phase p {
+      margin: 5px 0 10px;
+      font-weight: 500;
+      color: #00796b;
+    }
+    .details {
+      display: none;
+      margin-top: 10px;
+    }
+    .phase.active .details {
+      display: block;
+    }
+    .details li {
+      margin: 5px 0;
+      padding-left: 10px;
+    }
+    .icon {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      font-size: 1.2em;
+      color: #00796b;
+      transition: transform 0.3s;
+    }
+    .phase.active .icon {
+      transform: rotate(180deg);
+    }
+  </style>
+</head>
+<body>
+  <h1><i class="fas fa-road"></i> Vision-Aligned Roadmap</h1>
+  <p>Interactive 3-Year Plan for CS Undergraduate Program</p>
+  <div class="container">
+    <div class="phase" onclick="toggleDetails(this)">
+      <h2>Phase 1: Foundation</h2>
+      <p>June 2025 – Summer 2026</p>
+      <i class="fas fa-chevron-down icon"></i>
+      <ul class="details">
+        <li>Begin curriculum revision (Summer–Fall 2025)</li>
+        <li>Submit for internal approvals (Spring 2026)</li>
+        <li>Pilot elective AI/NLP/ML course (Spring or Fall 2026)</li>
+        <li>Post 1 new faculty position (by Spring 2026)</li>
+      </ul>
+    </div>
+    <div class="phase" onclick="toggleDetails(this)">
+      <h2>Phase 2: Growth & Deployment</h2>
+      <p>Fall 2026 – Summer 2027</p>
+      <i class="fas fa-chevron-down icon"></i>
+      <ul class="details">
+        <li>Launch new curriculum (Fall 2026 or Spring 2027)</li>
+        <li>Begin track-based advising and capstone preparation</li>
+        <li>Hire 2 more Assistant Professors (AI/ML/NLP + Cybersecurity)</li>
+        <li>Allocate 1 course release/year for grant writing</li>
+        <li>Start collaborations (e.g., UTRGV, Texas Tech)</li>
+      </ul>
+    </div>
+    <div class="phase" onclick="toggleDetails(this)">
+      <h2>Phase 3: Strategic Impact</h2>
+      <p>Fall 2027 – Summer 2028</p>
+      <i class="fas fa-chevron-down icon"></i>
+      <ul class="details">
+        <li>All courses taught by specialized faculty</li>
+        <li>Undergraduate research pipeline and REUs</li>
+        <li>Submit ABET pre-accreditation (if applicable)</li>
+        <li>Launch Rural AI & Data Lab • SECURE major grant</li>
+        <li>Publish • Support R2</li>
+      </ul>
+    </div>
+  </div>
+  <script>
+    function toggleDetails(phaseElement) {
+      phaseElement.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
